@@ -11,7 +11,7 @@ urlpatterns=[
     path("add_page",views.add_page,name="add_page"),
     path("view_page",views.view_page,name="view_page"),
     path("del_page",views.del_page,name="del_page"),
-    path("del_page",views.del_page,name="del_page"),
+    path("delete?ids=<str:id>",views.delete,name="delete"),
     path("enter",views.enter,name="enter"),
     path("update_data",views.update_data,name="update_data"),
     path('update?ids=<str:id>',views.update,name="update"),
